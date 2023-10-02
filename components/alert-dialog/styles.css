@@ -1,0 +1,30 @@
+.modal {
+	border: 1px solid hsl(var(--muted));
+	padding: 1.5rem;
+	max-width: 50ch;
+	background-color: hsl(var(--bg-dark));
+	border-radius: var(--radius);
+}
+
+.modal[open] {
+	display: grid;
+	gap: 1rem;
+}
+
+.modal::backdrop {
+	/* background-color: hsl(var(--bg-dark) / .1); */
+	background: rgb(0 0 0 / .45);
+	backdrop-filter: blur(4px);
+}
+
+.modal__text {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.modal__actions {
+	display: flex;
+	justify-content: flex-end;
+	gap: 0.5rem;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../common/styles/reset.css">
+	<link rel="stylesheet" href="../../common/styles/global.css">
+	<link rel="stylesheet" href="./button.css">
+	<link rel="stylesheet" href="./styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+	<title>Alert</title>
+</head>
+<body class="full-h">
+	<div class="container">
+		<h1>Alert Dialog</h1>
+		<br>
+		<br>
+		<button class="default open-button">Button</button>
+		<br>
+		<br>
+
+		<dialog
+			class="modal"
+			id="modal"
+			role="alertdialog"
+		>
+		<div class="modal__text">
+			<h2>An interesting title</h2>
+			<p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+		</div>
+		<div class="modal__actions">
+			<button class="outline close-button">Cancel</button>
+			<button class="default close-button">Continue</button>
+		</div>
+		</dialog>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

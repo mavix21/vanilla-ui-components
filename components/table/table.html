@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../common/styles/reset.css">
+		<link rel="stylesheet" href="../../common/styles/global.css">
+		<link rel="stylesheet" href="./styles.css">
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+		<title>Table</title>
+	</head>
+	<body class="center">
+		<div class="table-widget">
+			<span class="caption-container">
+				<span class="table-title">
+					Watchlist
+				</span>
+				<span class="table-row-count"></span>
+			</span>
+			<div class="table-wrapper">
+				<table>
+					<thead>
+						<tr>
+							<th id="ticker" class="sticky-left">Ticker</th>
+							<th id="price">Price [$]</th>
+							<th id="change_doll">Change [$]</th>
+							<th id="change_perc">Change [%]</th>
+							<th id="market_cap">Market Cap</th>
+							<th id="volume">Volume</th>
+							<th id="pe_ratio">PE Ratio</th>
+							<th id="dividend">Dividend (%)</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody id="table-rows">
+						<tr>
+							<td headers="ticker" class="stock sticky-left">Bitcoin</td>
+							<td headers="price">43,567.89 $</td>
+							<td headers="change_doll" class="price up">+1,234.56</td>
+							<td headers="change_perc">+3.45%</td>
+							<td headers="market_cap">800.32B</td>
+							<td headers="volume">2.5M</td>
+							<td headers="pe_ratio">18.76</td>
+							<td headers="dividend">1.8%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">Ethereum</td>
+							<td headers="price">3,567.12 $</td>
+							<td headers="change_doll" class="price down">-78.45</td>
+							<td headers="change_perc">-2.20%</td>
+							<td headers="market_cap">423.78B</td>
+							<td headers="volume">1.2M</td>
+							<td headers="pe_ratio">25.89</td>
+							<td headers="dividend">2.5%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">Cardano</td>
+							<td headers="price">2.15 $</td>
+							<td headers="change_doll" class="price up">+0.25</td>
+							<td headers="change_perc">+13.16%</td>
+							<td headers="market_cap">69.87B</td>
+							<td headers="volume">850,000</td>
+							<td headers="pe_ratio">8.60</td>
+							<td headers="dividend">0.9%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">Ripple</td>
+							<td headers="price">1.25 $</td>
+							<td headers="change_doll" class="price down">-0.10</td>
+							<td headers="change_perc">-7.41%</td>
+							<td headers="market_cap">57.32B</td>
+							<td headers="volume">1.7M</td>
+							<td headers="pe_ratio">14.50</td>
+							<td headers="dividend">1.2%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">Litecoin</td>
+							<td headers="price">145.67 $</td>
+							<td headers="change_doll" class="price up">+2.34</td>
+							<td headers="change_perc">+1.63%</td>
+							<td headers="market_cap">9.86B</td>
+							<td headers="volume">620,000</td>
+							<td headers="pe_ratio">17.89</td>
+							<td headers="dividend">1.5%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">Polkadot</td>
+							<td headers="price">28.45 $</td>
+							<td headers="change_doll" class="price up">+0.98</td>
+							<td headers="change_perc">+3.56%</td>
+							<td headers="market_cap">26.79B</td>
+							<td headers="volume">410,000</td>
+							<td headers="pe_ratio">30.80</td>
+							<td headers="dividend">0.7%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">Chainlink</td>
+							<td headers="price">31.78 $</td>
+							<td headers="change_doll" class="price down">-0.56</td>
+							<td headers="change_perc">-1.74%</td>
+							<td headers="market_cap">12.48B</td>
+							<td headers="volume">280,000</td>
+							<td headers="pe_ratio">22.67</td>
+							<td headers="dividend">0.9%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">Stellar</td>
+							<td headers="price">0.365 $</td>
+							<td headers="change_doll" class="price up">+0.025</td>
+							<td headers="change_perc">+7.35%</td>
+							<td headers="market_cap">8.25B</td>
+							<td headers="volume">1.1M</td>
+							<td headers="pe_ratio">15.87</td>
+							<td headers="dividend">1.1%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">Solana</td>
+							<td headers="price">155.32 $</td>
+							<td headers="change_doll" class="price up">+4.67</td>
+							<td headers="change_perc">+3.10%</td>
+							<td headers="market_cap">40.65B</td>
+							<td headers="volume">850,000</td>
+							<td headers="pe_ratio">34.56</td>
+							<td headers="dividend">0.8%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">Dogecoin</td>
+							<td headers="price">0.299 $</td>
+							<td headers="change_doll" class="price down">-0.015</td>
+							<td headers="change_perc">-4.77%</td>
+							<td headers="market_cap">38.94B</td>
+							<td headers="volume">2.3M</td>
+							<td headers="pe_ratio">13.45</td>
+							<td headers="dividend">0.6%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">VeChain</td>
+							<td headers="price">0.089 $</td>
+							<td headers="change_doll" class="price up">+0.007</td>
+							<td headers="change_perc">+8.54%</td>
+							<td headers="market_cap">5.92B</td>
+							<td headers="volume">980,000</td>
+							<td headers="pe_ratio">12.34</td>
+							<td headers="dividend">0.5%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">EOS</td>
+							<td headers="price">2.78 $</td>
+							<td headers="change_doll" class="price up">+0.12</td>
+							<td headers="change_perc">+4.50%</td>
+							<td headers="market_cap">2.65B</td>
+							<td headers="volume">350,000</td>
+							<td headers="pe_ratio">6.78</td>
+							<td headers="dividend">0.4%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+						<tr>
+							<td headers="ticker" class="stock sticky-left">Tron</td>
+							<td headers="price">0.075 $</td>
+							<td headers="change_doll" class="price down">-0.005</td>
+							<td headers="change_perc">-6.25%</td>
+							<td headers="market_cap">5.49B</td>
+							<td headers="volume">720,000</td>
+							<td headers="pe_ratio">10.25</td>
+							<td headers="dividend">0.3%</td>
+							<td class="sticky-right">
+								<button class="btn btn--primary">Trade</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/1.0.3/purify.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

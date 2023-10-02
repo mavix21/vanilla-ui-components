@@ -1,0 +1,24 @@
+.alert {
+	position: relative;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+	padding: 0.75rem 1rem;
+}
+
+.alert-icon {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	fill: #333;
+}
+
+.alert-title {
+	margin-bottom: 0.25rem;
+	font-weight: 500;
+	line-height: 1.125;
+	letter-spacing: -0.01em;
+}
+
+.alert-description {
+}
